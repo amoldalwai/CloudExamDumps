@@ -1,0 +1,17 @@
+Srno,Question,OptionA,OptionB,OptionC,OptionD,answer
+1," A Developer created a dashboard for an application using Amazon API 
+Gateway, Amazon S3, AWS Lambda, and Amazon RDS. The Developer needs an 
+authentication mechanism allowing a user to sign in and view the dashboard. 
+It must be accessible from mobile applications, desktops, and tablets, and 
+must remember user preferences across platforms.Which AWS service should the Developer use to support this authentication 
+scenario?",AWS KMS,Amazon Cognito,AWS Directory Service, Amazon IAM , B 
+2," A Developer has created an S3 bucket s3://mycoolapp and has enabled server 
+across logging that points to the folder s3://mycoolapp/logs. TheDeveloper moved 100 KB of Cascading Style Sheets (CSS) documents to the 
+folder s3://mycoolapp/css, and then stopped work. When the developer came 
+back a few days later, the bucket was 50 GB.What is the MOST likely cause of this situation?",The CSS files were not compressed and S3 versioning was enabled.,"S3 
+replication was enabled on the bucket.",#VALUE!," An S3 lifecycle policy has moved the 
+entire CSS file to S3 Infrequent Access. ", B 
+4," A Developer is working on an application that tracks hundreds of millions 
+of product reviews in an Amazon DynamoDB table. The records include the 
+data elements shown in the table:Which field, when used as the partition key, would result in the MOST 
+consistent performance using DynamoDB?",starRating,reviewID,comment, productID , B 

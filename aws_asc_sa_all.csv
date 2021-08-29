@@ -1,0 +1,19 @@
+Srno,Question,OptionA,OptionB,OptionC,OptionD,Answer
+1," A Solutions Architect is designing an application that will encrypt all 
+data in an Amazon Redshift cluster.Which action will encrypt the data at rest?",Place the Redshift cluster in a private subnet.,"Use the AWS KMS 
+Default Customer master key.",Encrypt the Amazon EBS volumes.," Encrypt 
+the data using SSL/TLS. ", A S
+2," A website experiences unpredictable traffic. During peak traffic times, 
+the database is unable to keep up with the write request.Which AWS service will help decouple the web application from the database?",Amazon SQS,Amazon EFS,Amazon S3, AWS Lambda , A w
+3," A legacy application needs to interact with local storage using iSCSI. A 
+team needs to design a reliable storage solution to provision all new 
+storage on AWS.Which storage solution meets the legacy application requirements?","AWS Snowball storage for the legacy application until the application 
+can be re-architected.","AWS Storage Gateway in cached mode for the legacy 
+application storage to write data to Amazon S3.",#VALUE!," An Amazon S3 volume mounted on the legacy application server locally 
+using the File Gateway service. ", C 
+4," A Solutions Architect is designing an architecture for a mobile gaming 
+application. The application is expected to be very popular. The Architect 
+needs to prevent the Amazon RDS MySQL database from becoming a bottleneck 
+due to frequently accessed queries.Which service or feature should the Architect add to prevent a bottleneck?",Multi-AZ feature on the RDS MySQL Database,"ELB Classic Load Balancer 
+in front of the web application tier","Amazon SQS in front of RDS MySQL 
+Database", Amazon ElastiCache in front of the RDS MySQL Database , D 

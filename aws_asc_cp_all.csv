@@ -1,0 +1,12 @@
+Srno,Question,OptionA,OptionB,OptionC,OptionD,answer
+1," Under the shared responsibility model, which of the following is the 
+customer responsible for?",Ensuring that disk drives are wiped after use.,"Ensuring that 
+firmware is updated on hardware devices.","Ensuring that data is encrypted 
+at rest.", Ensuring that network cables are category six or higher. ," C  
+"
+2," The use of what AWS feature or service allows companies to track and 
+categorize spending on a detailed level?",Cost allocation tags,Consolidated billing,AWS Budgets," AWS 
+Marketplace "," C  
+"
+3," Which service stores objects, provides real-time access to those objects, 
+and offers versioning and lifecycle capabilities?",Amazon Glacier,AWS Storage Gateway,Amazon S3, Amazon EBS , C  
