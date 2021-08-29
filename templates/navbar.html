@@ -1,0 +1,40 @@
+{% extends 'homepage.html' %}
+{% block navbar %}
+<style>
+ .card{
+  /* box-shadow: 1px 8px 20px grey;
+  -webkit-transition:  box-shadow .6s ease-in; */
+  box-shadow: 0px 13.6919px 21.6187px -10.8094px rgba(0, 48, 209, 0.153027);
+  
+  
+ }
+ .card:hover{
+  /* box-shadow: 1px 8px 20px grey;
+  -webkit-transition:  box-shadow .6s ease-in; */
+  box-shadow: 0px 16.6919px 25.6187px -5.8094px rgba(0, 48, 209, 0.153027);
+  
+ }
+ 
+ 
+</style>
+<div style="text-align: center;">
+{% for i in examlist %}
+
+<li style="display: inline-block">
+<div id="exam_card" class="card  p-3 m-3 bg-white  m-2  " style="min-width: 18rem;max-width:22rem;border-radius:15px;min-height:28rem;">
+ <img class="card-img-top" style="height: 170px;" src="{{examlist[i]['exam_img_url']}}" alt="Card image cap">
+ <div class="card-body text-start">
+   <h5 class="card-title">{{examlist[i]['exam_title']}}</h5>
+   <span class="badge rounded-pill  {{examlist[i]['exam_badge_code']}} ">{{examlist[i]['exam_tag1']}}</span>&nbsp;<span class="badge rounded-pill {{examlist[i]['exam_badge_code']}} {{examlist[i]['exam_text_color']}}">{{examlist[i]['exam_tag2']}}</span>
+   <hr/>
+   <p class="card-text" style="height: 5em;overflow: hidden;line-height: 2.5ex;font-size:14px">{{examlist[i]['exam_description']}}.</p>
+   <br>
+   <a href="{{examlist[i]['exam_route']}}" class="btn badge-pill  {{examlist[i]['exam_color_code']}} " style="width:100px;font-size:12px;">Take Quiz</a>
+   <a href="{{examlist[i]['exam_video']}}" class="btn badge-pill  btn-outline-secondary " style="width:100px;font-size:12px;">Videos</a>
+   <!-- <button type="button" class="btn badge-pill  btn-outline-secondary" style="width:100px;font-size:12px;">Videos</button> -->
+ </div> 
+</div>
+</li>
+{% endfor %}
+</div>
+{% endblock %}

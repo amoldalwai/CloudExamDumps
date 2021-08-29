@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+ *{
+  font-family: 'Mulish', sans-serif;
+ }
+ .card{
+  box-shadow: 0px 13.6919px 21.6187px -10.8094px rgba(0, 48, 209, 0.153027);
+ }
+</style>
+    <div >
+     <!-- {{examlist[exam_selected_id]['exam_title']}} -->
+    <div class="card p-3" style="border-radius:15px">
+     <div class="row g-0">
+       <div class="col-md-4">
+         <img src="{{examlist[exam_selected_id]['exam_img_url']}}" class="img-fluid mt-1" alt="...">
+       </div>
+       <div class="col-md-8">
+         <div class="card-body">
+           <h5 class="card-title">{{examlist[exam_selected_id]['exam_title']}}</h5>
+           <p class="card-text">Total Question:{{qcount}}</p>
+           <p class="card-text">{{examlist[exam_selected_id]['exam_description']}}</p>
+           <p class="card-text"><small class="text-muted">Last updated 15th July 2021</small></p>
+         </div>
+       </div>
+     </div>
+   </div>
+   <br/>
+      {% for i in result %}
+         <!-- <li>{{i}}</li> -->
+         <div class="card" style="border-radius:15px">
+          <div class="card-body">
+         <div class="card card-header"style="box-shadow: none;">
+          <div class="card-body" >
+        Question {{result[i]['id']}} ) {{result[i]['question']}}
+          </div>
+         </div>
+         <br/>
+         <div class="card" style="box-shadow: none;">
+          <div class="card-body">
+        <p >A: {{result[i]['options']['A']}}</p>
+        <p>B: {{result[i]['options']['B']}}</p>
+        <p>C: {{result[i]['options']['C']}}</p>
+        <p>D: {{result[i]['options']['D']}}</p>
+
+       </div>
+      </div>
+      
+        <br/>
+        <!-- <p>Answer:{{result[i]['answer']}}</p> -->
+        <!-- <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+         Answer:{{result[i]['answer']}}
+       </a> -->
+       <div class="dropdown dropright">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reveal Solution
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" > Answer:{{result[i]['answer']}}</a>
+       
+        </div>
+      </div>
+       
+          
+        
+
+
+       
+
+      
+      
+
+
+
+      </div>
+      
+        
+       </div>
+      </div>
+      <br/>
+      {% endfor %}
+    </div>
+    <div class="footer">
+     
+   </div>
+{% endblock %}
+   

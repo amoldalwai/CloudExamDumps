@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Template Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+  </head>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+		<script src="paginga.jquery.js"></script>
+  <style>
+   a{
+    color:black;
+   }
+   
+  
+  </style>
+  <script>
+  
+  </script>
+
+  <body class="card-header" style="background:#F0F5FF">
+   <!-- navbar -->
+          <nav class="navbar  navbar-expand-lg navbar-dark  fixed-top px-3" style="background:#5161ce;color: white;"> 
+           <a class="navbar-brand" href="/">CloudFreeDumps</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+             <span class="navbar-toggler-icon" style="color: white"></span>
+           </button>
+         
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Link </a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                   Dropdown
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" >Action</a>
+                   <a class="dropdown-item" >Another action</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" >Something else here</a>
+                 </div>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link " href="#">Disabled</a>
+               </li>
+             </ul>
+             <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius:30px">
+               <button class="btn-outline-primary p-1  my-2 my-sm-0" style="color:white;border-radius:30px;width: 100px;border:1px solid white;" type="submit">Search</button>
+             </form>
+           </div>
+         </nav>
+       <br/>
+       <br/>
+       <br/>
+
+   <!-- navbar -->
+  
+       <div>
+       {% block content %}{% endblock %}
+       </div>
+
+
+    <!-- footer -->
+ <div class="container-fluid  justify-content-center" style="background:#5161ce;color: white;">
+  <footer>
+      <div class="row my-5 justify-content-center pt-5">
+       
+          <div class="col-11">
+              <div class="row ">
+                   
+                  <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                      <h3 class="text mb-md-0 mb-5 bold-text">CloudFreeDumps</h3>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                      <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                      <ul class="list-unstyled">
+                          <li>Home</li>
+                          <li>About</li>
+                          <li>Blog</li>
+                          
+                      </ul>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                      <h6 class="mb-3 mb-lg-4 text bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                      <p class="mb-1">605, RATAN ICON BUILDING</p>
+                      <p>SEAWOODS SECTOR</p>
+                  </div>
+              </div>
+              <div class="row ">
+                  <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                      <p class="social text mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span>CloudFreeDumps All Rights Reserved.</small>
+                  </div>
+                  
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                      <h6 class="text bold-text"><b>Amol Dalwai</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> amol-dalwai@gmail.com</small>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <span style="color: #5161ce">footer</span>
+</div>
+ <!-- footer -->
+    
+   
+  </body>
+  
+</html>
